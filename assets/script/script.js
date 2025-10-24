@@ -2,7 +2,7 @@
 const containerPokemon = document.getElementById('listPokemon');
 
 // DECLARAÇÃO DA API
-const urlPokemom = 'https://pokeapi.co/api/v2/pokemon?';
+const urlPokemom = 'https://pokeapi.co/api/v2/pokemon?limit=3&offset=0';
 
 // FUNÇÃO PARA RECEBER OS DADOS DA API
 async function dataPokemons(){
@@ -39,7 +39,7 @@ async function dataPokemons(){
 
             // INSERINDO INFORMAÇÕES NO CARD
             card.innerHTML = `<h3>${name}</h3>
-            <img src="${image}" alt="image ${image}" style="width:100px;">`;
+            <img src="${image}" alt="image ${image}">`;
 
             containerPokemon.appendChild(card);
         });

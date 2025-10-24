@@ -1,0 +1,71 @@
+@font-face {
+    font-family: 'Pokemon Solid';
+    src: url('../fonts/Pokemon Solid.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Pokemon Hollow';
+    src: url(../fonts/Pokemon\ Hollow.woff2);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Pokemon Solid';
+    font-size:small;
+    color: white;
+}
+
+header{
+    width:100%;
+    height: 25vh;
+    background-image: url('../images/headerTittle.png');
+    background-repeat: no-repeat;
+    background-size: 500px;
+    background-position: center;
+}
+
+body{
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: space-between;
+     background-image: url('../images/background.jpg');
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-attachment: fixed;
+}
+
+#listPokemon{
+    display:flex; 
+    flex-wrap:wrap; 
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.cardPokemon{
+   flex: 1;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   background-color: rgba(141, 135, 135, 0.5);
+   border-radius: 10px;
+}
+
+.cardPokemon img{
+    width: 250px;
+}
+
+.cardPokemon h3{
+    text-align: center;
+}
+
+footer{
+    width: 100%;
+    height: 5vh;
+    text-align: center;
+}
