@@ -2,7 +2,7 @@
 const containerPokemon = document.getElementById('listPokemon');
 
 // DECLARAÇÃO DA API
-const urlPokemom = 'https://pokeapi.co/api/v2/pokemon?limit=3&offset=0';
+const urlPokemom = 'https://pokeapi.co/api/v2/pokemon?limit=12&offset=0';
 
 // FUNÇÃO PARA RECEBER OS DADOS DA API
 async function dataPokemons(){
